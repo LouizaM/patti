@@ -1,0 +1,347 @@
+﻿/*SOMMAIRE
+    0. RESET CSS
+    1. GENERAL
+    2. HEADER
+    3. HELLO
+    4. TEAM
+    5. CITATION
+    6. WORK
+    7. FUN FACTS
+    8. SERVICES
+    9. BLOG
+    10. TWITTER
+    11. TESTIMONIALS
+    12. PARTNERS
+    13. CONTACT
+*/
+
+/*0. RESET CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+    list-style-type: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*1. GENERAL*/
+h1 {
+    color: #444444;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: lighter;
+}
+h2{
+    color: #444444;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: lighter;
+}
+
+img{
+    max-width: 100%;
+}
+.link {
+    color: #323232;
+}
+
+.link:hover {
+    color: #FE7E17;
+    }
+
+/*2. HEADER*/
+.main-menu__nav{
+    color: #323232;
+    height: 1.5rem;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+    display:flex;
+    width: 30%;
+}
+.main-menu__nav:hover{
+    color: #fe7e17
+}
+
+/*3. HELLO*/
+.hello__panel, .separator{
+    display: flex;
+    width: 80rem;
+    justify-content: space-around;
+    margin: 1rem auto;
+    align-content: space-between;
+    
+}
+h3{
+    color: #323232;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.about__panel{
+    display: flex;
+    width: 80rem;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+.hello__text {
+    color: #686868;
+    font-size: 0.938rem;
+}
+progress {
+    -webkit-appearance: none;
+  }
+  
+  ::-webkit-progress-value {
+    color: #FE7E17;
+  }
+
+/*4. TEAM*/
+.team__pannel{
+    display: flex;
+    width: 80rem;
+    justify-content: space-around;
+    align-items: center;
+    margin:1rem auto;
+    flex-wrap: nowrap;
+}
+    .team-text{
+        color: #444444;
+        font-size: 1.125rem;
+        text-align: center;
+    }
+    .card-team__photo{
+        filter: grayscale(100%);
+    }
+    .card-team__photo:hover{
+        filter: grayscale(30%);
+        filter: brightness(80%);
+    }
+    .card-team__heading{
+        font-size: 0.875rem;
+        color: #444444;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    .card-team__role{
+        font-size: 0.875rem;
+        color: #323232;
+        font-weight: 300;
+        text-transform: inherit;
+    }
+    .card-team__details{
+        font-size: 1.125rem;
+        color: #444444;
+        font-weight: 300;
+        text-transform: inherit;
+    }
+    .card-team__social{
+        font-size: 0.875rem;
+        color: #82817F;
+        display: inline;
+    }
+    .card-team__social:hover{
+        color: #fe7e17;
+    }  
+
+/*5. CITATION*/
+.quote{
+    background-image: url(images/vue-front-de-mer.jpg);
+}
+.quote__phrase{
+    font-size: 1.875rem;
+    text-transform: inherit;
+    color: #ffffff;
+}
+.quote__autor{
+    align-self: center;
+    font-size: 0.938rem;
+    text-transform: uppercase;
+    color: #fafafa;
+}
+
+/*6. WORK*/
+ul#menu-work li {
+    display: inline;
+}
+    .image-work__item{
+        filter: grayscale(100%);
+    }
+    .image-work__item:hover{
+        filter: grayscale(30%);
+        filter: brightness(80%);
+    }
+
+/*7. FUN FACTS*/
+.fact__pannel{
+    display: flex;
+    width: 80rem;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.fact__number{
+    color: #323232;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.fact__text{
+    color: #686868;
+    font-size: 0.938rem;
+}
+
+/*8. SERVICES*/
+.services__pannel{
+    background-image: url(images/ville-vue-ciel.jpg);
+}
+h3.services {
+    color: #444444;
+    font-size: 0.875rem;
+}
+.icons {
+    font-size: 3.5rem;
+    color: #323232;
+    display: flex;
+}
+.services__pannel {
+    display: flex;
+    width: 80rem;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+/*9. BLOG*/
+.blog__pannel1 {
+    display: flex;
+    width: 100rem;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.blog__pannel2 {
+    display: flex;
+    width: 100rem;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.blog__text{
+    color: #686868;
+    font-size: 0.938rem;
+    }
+.blog__date{
+    color: #a3a2a2;
+    font-size: 0.75rem;
+    }
+.blog__image{
+    filter: grayscale(100%);
+    }
+.blog__image:hover{
+        filter: grayscale(30%);
+        filter: brigthness (80%);
+    }
+.quote-einstein{
+        background-color: #323232;
+    }
+.quote__text{
+        font-size: 1.5rem;
+        color: #ffffff;
+    }
+.quote__date{
+        font-size: 0.75rem;
+        color: #a3a2a2;
+    }
+.quote__author{
+        font-size: 0.938rem;
+        color: #a3a2a2;
+    }
+
+/*10. TWITTER*/
+.twitter{
+    background-image: url(images/plage.jpg);
+}
+
+/*11. TESTIMONIALS*/
+.partners {
+    width: 100rem;
+    margin: 0 auto;
+}
+.infos{
+    width: 100rem;
+    margin: 0 auto;
+}
+.testimonials__author {
+    color: #FE7E17;
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+.testimonials__role{
+    color: #323232;
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+.testimonial__text {
+    color: #686868;
+    font-size: 1.125rem;
+}
+
+/*12. PARTNERS*/
+.partners {
+    background-color: #FE7E17;
+    text-align: center;
+}
+h6{
+    visibility: hidden;
+}
+
+/*13. CONTACT*/
+.contact{
+    background-image: url(images/bureaux.jpg);
+}
+.form{
+    text-align: right;
+}
